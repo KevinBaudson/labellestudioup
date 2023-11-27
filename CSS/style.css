@@ -33,9 +33,7 @@ h2{
     font-family: 'Ephesis', cursive;
     font-size: 2.5rem;
 }
-h4{
-    word-break: break-all;
-}
+
 #navbar ul{
     display: flex;
     gap: 10px;
@@ -284,19 +282,58 @@ h4{
     }
     #services .cards{
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 45% 45%;
     }
     .card{
         margin: 10px;
         max-width: 100px;
-        font-size: small;
+    }
+    .card h4{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width:450px){
+    #about{
+        font-size: smaller;
+    }
+    #services h3{
+        font-family: 'Ephesis', cursive;
+    }
+    #services .cards{
+        word-wrap: break-word;
+        }
+    
+    }
+
+
+@media screen and (max-height:470px){
+    #navbar{
+        height: 20vh;
+    }
+    #home{
+        min-height: 80vh;
+    }
+    #about{
+        
+        min-height: 100vh;
+    }
+    #services{
+        min-height: 100vh;
+    }
+    #services h2{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size:.5rem;
+    }
+    p{
+        font-size: 10px;
+    }
+   
+    .cards .card{
+        
+        width: 100px;
+
 
     }
 }
-@media screen and(max-width:400px){
-    #main > #contact{
-        display: none;
-
-    }
-}
-
