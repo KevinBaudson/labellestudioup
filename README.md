@@ -2,7 +2,7 @@
 Site criado com HTML CSS e JavaScript
 
 
-<img src="./img/labelle.jpg" />
+<img src="./img/labelle.png" />
 
 
 ## Link do site
