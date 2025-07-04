@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labelle Studio</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JS/script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -16,16 +17,23 @@
   <body>
     <header class="header">
       <h1 class="logo">Labelle <i class="fa-solid fa-pen"></i></h1>
+
+      <!-- Botão do menu mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Menu de navegação -->
       <nav class="navbar">
         <a href="#">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#">Contato</a>
+        <a href="#contato">Contato</a>
       </nav>
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero slide-up">
         <div class="content">
           <h2 class="title-hero">Seja bem-vinda!</h2>
           <p>
@@ -48,7 +56,7 @@
         </div>
       </section>
 
-      <section id="sobre" class="sobre">
+      <section id="sobre" class="sobre fade-in">
         <div class="sobre-image">
           <img
             src="./img/foto-principal.png"
@@ -66,7 +74,7 @@
           </p>
         </div>
       </section>
-      <section id="servicos" class="especialidades">
+      <section id="servicos" class="especialidades slide-left">
         <h2 class="especialidades-title">Nossas Especialidades</h2>
         <div class="especialidades-cards">
           <div class="card">
@@ -100,7 +108,7 @@
           </a>
         </div>
       </section>
-      <section class="localizacao">
+      <section class="localizacao slide-right">
         <div class="localizacao-content">
           <h2 class="localizacao-title">Onde estamos</h2>
           <p>
@@ -125,6 +133,42 @@
           ></iframe>
         </div>
       </section>
+      <div class="button-up">
+        <a href="#">
+          <i class="fa-regular fa-circle-up fa-2x"></i>
+        </a>
+      </div>
     </main>
+    <footer id="contato" class="footer fade-in">
+      <div class="footer-about">
+        <div class="footer-brand">Labelle</div>
+        <p>
+          LaBelle é um espaço dedicado à sua beleza e bem-estar. Com técnicas
+          modernas e atendimento personalizado, proporcionamos uma experiência
+          única em depilação.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <strong>Links Rápidos</strong>
+        <a href="#">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#especialidades">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer-contato">
+        <strong>Contato</strong>
+        <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@labelle.com</p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Rua Exemplo, 123 - São Paulo
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Labelle. Todos os direitos reservados.
+      </div>
+    </footer>
   </body>
 </html>
